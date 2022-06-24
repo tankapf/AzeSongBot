@@ -10,4 +10,4 @@ logging.basicConfig(
 
 LOGGER = logging.getLogger(__name__)
 
-MusiqiYuklemePlayList = Client("MusiqiYuklemeBot", bot_token=BOT_TOKEN, api_hash=API_HASH, api_id=API_ID)
+SDSongBot = Client("SDSongBot", bot_token=BOT_TOKEN, api_hash=API_HASH, api_id=API_ID)
