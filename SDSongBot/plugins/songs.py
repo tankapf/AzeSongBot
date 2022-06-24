@@ -4,7 +4,7 @@ import os
 import requests
 import aiohttp
 import youtube_dl
-
+import SDSongBot 
 from SDSongBot import SDbot as app
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
@@ -14,7 +14,7 @@ def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
-@app.on_message(filters.command('yukle'))
+@app.on_message(filters.command('song'))
 def song(client, message):
 
     user_id = message.from_user.id 
