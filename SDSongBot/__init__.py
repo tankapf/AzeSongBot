@@ -1,4 +1,4 @@
-#SDBOTs <https://t.me/SDBOTs_Inifinity>
+#Reponu Öz Adına Çıxaran Bir Başa @Vusaliw'a Ata Desin 
 
 import logging
 from pyrogram import Client
