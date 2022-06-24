@@ -10,7 +10,7 @@ from SDSongBot import LOGGER
 pm_start_text = """
 Salam [{}](tg://user?id={}), Mən Mahnı Yükləmək Üçün Kodlaşdırılmış Botam 🎵
 🖤 İsdədiyin Mahnı Adını Mənə Göndər...⚡
-      Məsələn:```/yukle Madrigal Seni Dert etmeler```
+      Məsələn:```/song Madrigal Seni Dert etmeler```
       
 **Bot @Vusaliw Tərəfindən 0 Dan Tərcümə Olunmuşdur 🕊️**
 """
