@@ -1,6 +1,5 @@
-# Plugin by @Mr_Dark_Prince
-#SDBOTs <https://t.me/SDBOTs_Inifinity>
-
+# Reponu Öz Adına Çıxaram @Vusaliw'a Ata Desin 
+#Əkmə Peysər Açıq Görüb Clon fork dowland eləmə!
 import os
 import requests
 import aiohttp
@@ -15,7 +14,7 @@ def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
-@app.on_message(filters.command('song'))
+@app.on_message(filters.command('yukle'))
 def song(client, message):
 
     user_id = message.from_user.id 
@@ -26,7 +25,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Finding the song...')
+    m = message.reply('🔎 İsdədiyniz Mahnı Axtarılır...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -44,17 +43,17 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "❌ Found Nothing.\n\nTry another keywork or maybe spell it properly."
+            "❌ Mahnı Tapılmadı.\n\nTelegram 32 bit'dən 64 bit'ə Keçdiyinə Görə Bəzi Mahnıları Yükləyə Bilmir."
         )
         print(str(e))
         return
-    m.edit("📥 Downloading the song by @SDbotsz 📥")
+    m.edit("📥 Mahnı Yüklənir Powered By @VendettaChatAz 📥")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**~ Uploaded by @SDbotsz ~**'
+        rep = '**~ Yenilənir... @VendettaChatAz ~**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -62,7 +61,7 @@ def song(client, message):
         s = message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit('❌ Error')
+        m.edit('❌ Xəta')
         print(e)
 
     try:
