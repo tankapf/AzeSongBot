@@ -1,12 +1,12 @@
 # SD Song Bot
-##  🎹 A telegram bot that can download songs 🎸
-### Reach me on Telegram [🎹 Song Download Bot 🎸](http://t.me/SDSongDlBot)
+##  🎹 Telegram Mahnı Yükləmə Botu 🎸
+### Botu clon fork dowland edən birbaşa peysərdi qura Bilərsiniz Ama Rəsmi kanalı siımədən. yada @vusaliw icazə al [🎹 Song Download Bot 🎸](http://t.me/MusiqiYuklemeBot)
 <p align="center">
   <img src="https://telegra.ph/file/b8e564454da50ddc80b59.jpg">
 </p>
 
-<a href="https://github.com/SDInifinity/SD-SongBot/fork">
-    <img src="https://img.shields.io/github/forks/Sadew451/U-Filter-Bot?style=social">
+<a href="">
+    <img src="">
 
   </a>  
 </p>
@@ -21,16 +21,15 @@ The easiest way to deploy this Song Bot  <br><br>
 ## Credits
 
 - [Pyrogram](https://github.com/pyrogram)
-- Mr Dark Prince
+- Vüsaliw
 
 ### Credits:
 
-[@SadewJ](https://t.me/SadewJ)
+[@Vusaliw.](https://t.me/vusaliw)
 
 
 
 
 ### Developers:
 
-[@SadewJ](https://t.me/SadewJ)
-[@Damantha](https://t.me/Damantha_Jasinghe)
+Əlaqə @Vusaliw. Translate Developer.
